@@ -27,7 +27,6 @@ jobs:
     - name: Run Test
       run: |
           mkdir build
-          cd build
-          cmake .. 
+          cd build/
           make
-          ./us 
+          ./us
