@@ -25,7 +25,6 @@ jobs:
 
     - name: Run Test
       run: |
-          mkdir build
           cd build/
           make
           ./test
