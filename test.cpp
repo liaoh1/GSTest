@@ -15,7 +15,7 @@ TEST(GridSizeTest, SameSize) {
     if(rows)
     {
         for (size_t i = 0; i < u.size(); ++i) {
-            EXPECT_EQ(u[i].size(), v[i].size()) << "the row" << i << "doesn't match";
+            EXPECT_EQ(u[i].size(), v[i].size()) << "Row" << i << "has different sizes in u and v.";
         }
     }
 }
@@ -29,10 +29,10 @@ TEST(SimulationTest, HandlesZeroInput) {
     u = std::vector<std::vector<double>>(width, std::vector<double>(height, 0.0));
     v = std::vector<std::vector<double>>(width, std::vector<double>(height, 0.0));
 
-    // Run the simulateStep
+    // Run the simulation
     simulateStep();
 
-    // Check that u and v are still zero after simulateStep function called
+    // Check that u and v are still zero after simulation
     for (int i = 0; i < width; ++i) {
         for (int j = 0; j < height; ++j) {
             EXPECT_DOUBLE_EQ(0.0, u[i][j]) << "u[" << i << "][" << j << "] is not zero.";
@@ -40,6 +40,7 @@ TEST(SimulationTest, HandlesZeroInput) {
         }
     }
 }
+
 int main(int argc, char** argv)
 {
     ::testing::InitGoogleTest(&argc, argv);
