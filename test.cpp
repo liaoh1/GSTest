@@ -7,6 +7,19 @@ TEST(TypeMatch, CheckTypeMatch) {
     EXPECT_EQ(typeid(F), typeid(u[0][0])) << "The types of F and u are not match";
     EXPECT_EQ(typeid(k), typeid(v[0][0])) << "The types of k and v are not match";
 }
+
+TEST(GridSizeTest, SameSize) {
+    bool rows = (u.size(), v.size());
+
+    // If the number of rows is the same, check each row's size is right.
+    if(rows)
+    {
+        for (size_t i = 0; i < u.size(); ++i) {
+            EXPECT_EQ(u[i].size(), v[i].size()) << "the row" << i << "doesn't match";
+        }
+    }
+}
+
 TEST(SimulationTest, HandlesZeroInput) {
     const int width = 256;
     const int height = 256;
