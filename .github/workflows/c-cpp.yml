@@ -29,4 +29,4 @@ jobs:
           mkdir build
           cd build/
           make
-          ./us
+          ./test
