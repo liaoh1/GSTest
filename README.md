@@ -18,7 +18,7 @@ GoogleTest, here is the steps:
 GSTest<br>
 ├── CMakeLists.txt<br>
 ├── README.md<br>
-├── googletest
+├── googletest<br>
 │   ├── BUILD.bazel
 │   ├── CMakeLists.txt
 │   ├── CONTRIBUTING.md
@@ -512,7 +512,7 @@ GSTest<br>
 ├── gs.cpp
 ├── gs.h
 ├── main.cpp
-└── test.cpp
+└── test.cpp<br>
 
 52 directories, 446 files
 The reason why we wanna split original gs.cpp files to gs.cpp, main.cpp, gs.h is firstly we wanna our code more readable and maintainable, so according to the basic rule of building project, we split them up. Plus, we wanna use the simulateStep function in gs.cpp to complete the final test, and we don't to get many VTK files after each run. To simplify the process, we made this decision.
