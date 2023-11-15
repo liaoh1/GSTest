@@ -19,9 +19,9 @@ GSTest<br>
 ├── CMakeLists.txt<br>
 ├── README.md<br>
 ├── googletest<br>
-│   ├── BUILD.bazel
-│   ├── CMakeLists.txt
-│   ├── CONTRIBUTING.md
+│   ├── BUILD.bazel<br>
+│   ├── CMakeLists.txt<br>
+│   ├── CONTRIBUTING.md<br>
 │   ├── CONTRIBUTORS
 │   ├── LICENSE
 │   ├── README.md
