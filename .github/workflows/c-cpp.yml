@@ -17,14 +17,9 @@ jobs:
     - name: Build Project
       run: |    
           mkdir build          
-          cd build/ 
-          cmake -S .. -B .
-          cmake -Dgtest_build_tests=on -DCMAKE_INSTALL_PREFIX=. ..
-          make
-
-
-    - name: Run Test
-      run: |
           cd build/
-          make
+          cmake ..
+          make 
+    - name: Run Test
+      run: |  
           ./test
