@@ -21,5 +21,6 @@ jobs:
           cmake ..
           make 
     - name: Run Test
-      run: |  
+      run: | 
+          cd build/
           ./test
