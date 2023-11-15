@@ -15,9 +15,9 @@ GoogleTest, here is the steps:
 5. make; install make
 
 # The structure of the project
-GSTest
-├── CMakeLists.txt
-├── README.md
+GSTest<br>
+├── CMakeLists.txt<br>
+├── README.md<br>
 ├── googletest
 │   ├── BUILD.bazel
 │   ├── CMakeLists.txt
