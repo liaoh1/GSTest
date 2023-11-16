@@ -524,7 +524,7 @@ the line that could help you:<br>
 https://cgold.readthedocs.io/en/latest/first-step/installation.html
 
 # How To Run
-## You should have 5 files or directory at first:<br>
+## You should have 6 files or directory at first:<br>
 1. CMakeLists.txt
 2. README.md
 3. googletest
